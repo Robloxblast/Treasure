@@ -1,0 +1,192 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Test", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Tab:AddToggle({
+	Name = "Auto Dig",
+	Default = false,
+	Callback = function(Value)
+		  getgenv(). Pull = Value
+				
+		while getgenv(). Pull do
+		game:GetService("ReplicatedStorage").Remotes.Click:FireServer("Dig",workspace.Sand[dig])
+		wait(0.001)
+		end
+    	end    
+})
+
+
+Tab:AddDropdown({
+	Name = "Choose which one to Dig",
+	Default = "1",
+	Options = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27"},
+	Callback = function(Value)
+	      dig = Value
+	end    
+})
+
+
+Tab:AddToggle({
+	Name = "Auto Upgrade",
+	Default = false,
+	Callback = function(Value)
+		  getgenv(). Upd = Value
+		
+		while getgenv(). Upd do
+	    game:GetService("ReplicatedStorage").Remotes.Upgrades:FireServer(upgrade)
+	wait(0.2)
+	end
+	end    
+})
+
+
+Tab:AddDropdown({
+	Name = "Dropdown",
+	Default = "Speed",
+	Options = {"Speed", "Luck", "Power"},
+	Callback = function(Value)
+		  upgrade = Value
+	end    
+})
+
+
+Tab:AddButton({
+	Name = "Spawn",
+	Callback = function()
+      	  local TweenService = game:GetService("TweenService")
+
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-357.11248779296875, 14.172290802001953, -69.82933044433594)}):Play()
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Others",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Tab:AddButton({
+	Name = "World 2",
+	Callback = function()
+      	  local TweenService = game:GetService("TweenService")
+
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-357.97796630859375, 14.172292709350586, 18.654922485351562)}):Play()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "World 3",
+	Callback = function()
+      	  local TweenService = game:GetService("TweenService")
+
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-358.61968994140625, 14.161758422851562, 165.20755004882812)}):Play()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "World 4",
+	Callback = function()
+      	  local TweenService = game:GetService("TweenService")
+
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-358.51495361328125, 14.154716491699219, 281.7665100097656)}):Play()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "World 5",
+	Callback = function()
+      	  local TweenService = game:GetService("TweenService")
+
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-358.8617248535156, 14.154695510864258, 438.6515197753906)}):Play()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "World 6",
+	Callback = function()
+      	  local TweenService = game:GetService("TweenService")
+
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-358.9767761230469, 14.154695510864258, 544.5955200195312)}):Play()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "World 7",
+	Callback = function()
+      	  local TweenService = game:GetService("TweenService")
+
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-358.4715576171875, 14.154729843139648, 713.080322265625)}):Play()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "World 8",
+	Callback = function()
+      	  local TweenService = game:GetService("TweenService")
+
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-358.49908447265625, 14.154726028442383, 816.5297241210938)}):Play()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "World 9",
+	Callback = function()
+      	  local TweenService = game:GetService("TweenService")
+
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-359.0492248535156, 14.154729843139648, 969.3704833984375)}):Play()
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Owner, Scripter: Robloxblast"
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Key System: RoJav"
+})
