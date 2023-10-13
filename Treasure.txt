@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Test", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Blast Hub [Treasure Simulator]", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -74,7 +74,8 @@ Tab:AddButton({
 	Callback = function()
       	  local TweenService = game:GetService("TweenService")
 
-local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+
 {CFrame = CFrame.new(-357.11248779296875, 14.172290802001953, -69.82933044433594)}):Play()
   	end    
 })
@@ -92,7 +93,8 @@ Tab:AddButton({
 	Callback = function()
       	  local TweenService = game:GetService("TweenService")
 
-local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+
 {CFrame = CFrame.new(-357.97796630859375, 14.172292709350586, 18.654922485351562)}):Play()
   	end    
 })
@@ -103,7 +105,8 @@ Tab:AddButton({
 	Callback = function()
       	  local TweenService = game:GetService("TweenService")
 
-local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+
 {CFrame = CFrame.new(-358.61968994140625, 14.161758422851562, 165.20755004882812)}):Play()
   	end    
 })
@@ -114,7 +117,8 @@ Tab:AddButton({
 	Callback = function()
       	  local TweenService = game:GetService("TweenService")
 
-local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+
 {CFrame = CFrame.new(-358.51495361328125, 14.154716491699219, 281.7665100097656)}):Play()
   	end    
 })
@@ -125,7 +129,8 @@ Tab:AddButton({
 	Callback = function()
       	  local TweenService = game:GetService("TweenService")
 
-local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+
 {CFrame = CFrame.new(-358.8617248535156, 14.154695510864258, 438.6515197753906)}):Play()
   	end    
 })
@@ -136,7 +141,8 @@ Tab:AddButton({
 	Callback = function()
       	  local TweenService = game:GetService("TweenService")
 
-local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+
 {CFrame = CFrame.new(-358.9767761230469, 14.154695510864258, 544.5955200195312)}):Play()
   	end    
 })
@@ -147,7 +153,8 @@ Tab:AddButton({
 	Callback = function()
       	  local TweenService = game:GetService("TweenService")
 
-local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+
 {CFrame = CFrame.new(-358.4715576171875, 14.154729843139648, 713.080322265625)}):Play()
   	end    
 })
@@ -158,7 +165,8 @@ Tab:AddButton({
 	Callback = function()
       	  local TweenService = game:GetService("TweenService")
 
-local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+
 {CFrame = CFrame.new(-358.49908447265625, 14.154726028442383, 816.5297241210938)}):Play()
   	end    
 })
@@ -169,7 +177,8 @@ Tab:AddButton({
 	Callback = function()
       	  local TweenService = game:GetService("TweenService")
 
-local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+
 {CFrame = CFrame.new(-359.0492248535156, 14.154729843139648, 969.3704833984375)}):Play()
   	end    
 })
